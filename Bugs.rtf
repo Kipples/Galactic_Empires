@@ -1,0 +1,451 @@
+{\rtf1\ansi\ansicpg1252\deff0{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fnil\fcharset0 Courier New;}}
+{\colortbl ;\red0\green0\blue0;\red128\green128\blue0;}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\cf1\lang2057\b\f0\fs24 Changes 2.9.2\par
+\par
+\b0\fs20 - Got the twinkling stars to work!\par
+- Updated tutorial\par
+- Rewrote the planet code: there are now 6 possible landing spots when beaming down\par
+- It also streamlines the scenario code and makes it much simpler to make new maps\par
+- Ships can now move on turn 1, but work and science doesn't occur until turn 2\par
+\par
+\b\fs24\par
+Changes 2.9\cf2\b0\fs20\par
+\cf1\par
+- Included a great patch by iceiceice which shows food/good for each terrain in the top right, and current production stats for each HQ in the sidebar\par
+- HQs now generate 2 gold all every map\par
+- Dwartha wagon's defence laser is now defend only\par
+- Replaced mudcrawlers with a new alien unit: Adamantine\par
+- New 3p map!\par
+- Fixed numerous little bugs\par
+- Added some new terrain types\par
+- Lowered Iildari troop resistances\par
+\b\fs24\par
+Changes 2.8\cf2\b0\fs20\par
+\cf1\par
+- Each faction now has an individual Transporter bonus\par
+- I've tweaked lots of the unit stats to make each faction have a different speciality and hopefully a different style of gameplay\par
+- Ship upgrades cost less\par
+- Transporters and bombers cost less\par
+- Higher level ships cost less, to reward research\par
+- Passengers now heal 2HP during transit\par
+- Planets have more HP\par
+- Rubble is treated now as hill (gives 2g for workers)\par
+- Ice mountains and flower terrain are now workable\par
+- Fixed the bugs with stasis, radar and thrusters\par
+- Vendeeni Aphid and Mite were mixed up, no longer\par
+- Fixed darkspace generator (weird workaround)\par
+\par
+\b\fs24 Things to add\par
+\b0\fs20\par
+tutorial need some work: explain flagship, upgrades, transport directions, antimatter\par
+research options: warp two terran creates scroll bar\par
+3p gamma quadrant has no aliens or artifacts\par
+passengers weapon is affected by TOD terrain\par
+HQ terrain says (void)\par
+HQs face direction of attackers\par
+empire options - give gold, concede, change all population preferences\par
+reportly advanced nanomine does not work\par
+comet - ai-controlled missile\par
+meteorite - same\par
+new map using wormholes, black-holes and the sun\par
+code the alien sub-race\par
+code the dwartha ships\par
+add the dwartha ships to the tech-tree and research options menu\par
+survival/mission map\par
+more animation frames for all units\par
+sort out transitions for moon mushrooms and moon craters\par
+transitions for H tiles are a bit dodgy\par
+include vehicles?\par
+add cloner and barracks (factory?) to headquarter upgrades\par
+HQ upgrade that removes all upkeep on the planet (gotta remove it when they beam or teleport)\par
+\par
+\b\fs24 Things to fix\par
+\par
+\b0 patrols seem much better than interceptors\par
+citizens spawned nw of HQ, sometimes onto lava\par
+weak melee for servicer\par
+"injured, can't work" - not for scientists\par
+give sniper bonus in forest\par
+\fs20 still got silo on R options\par
+robots can't cross swamp. either change that, or fix the 3p map\par
+the waving flag can just be seen over the right shoulder of the terran HQ\par
+3p map - are the co-ordinates for beaming correct? Check Mehga...\par
+\b standardise abilities/weapon specials (there are currently a few different names for the same thing)\b0\par
+standardise traits (mechanical for all non-living?)\par
+add a low-defence space terrain (ion storm?)\par
+\b add a faction overview to the subsequent 'parts' of the intro 'story'?\b0\par
+write race descriptions for the 4 main factions\par
+\b fix attack-thrusters\b0\par
+fix diviner, sibyl, inventor, and armoured inventor ranged anim (and maybe the dwartha inquisitor) - psionic attack\par
+\b find out why mushrooms give 1 food, and not 3\b0\par
+make some techs faction-dependant (for instance, vendeeni shouldn't have access to cloak - no upgrade, no probes, no smart-bombs)\par
+\b make haywire show up\b0\par
+\b make a new colour-neutral icon for planet defence laser\par
+destroyed planets should leave asteriod field behind\b0\par
+\b when planet dies, the HQ tile should be neutralised\par
+are planet's meant to zoc?\par
+What happened to planet's unit descriptions?\b0\par
+\b limit teleportor to one-use per HQ per turn\par
+give a floating label on scientists, etc when a new level of tech is reached\par
+make friendly units loyal - fixed?\par
+figure out why some (iildari, maybe others) HQs show 'mixed citizen' as the unit type being produced\par
+trooper laser rifle icon\b0\par
+\b wrong lookout price\b0\par
+\b remove thief from beta\b0\par
+\b lower xp for explorers\par
+fix the bug in the tutorial that does not reduce the HQ's food - and creates extra worker\b0\par
+deserialistion error persists\par
+there is a sound file missing, or incorrectly named somewhere\par
+something is being set to -1 def, dunno what or how\par
+\b transporters can still beam whilst stoned/stasis\b0\par
+\par
+\b increase terran troop max xp sightly\b0\par
+\b descrease planet and HQ def, increase planet HP\b0\par
+ballistics advancement message doesn't show - i can't find why\par
+edit the blue bits off vendeeni hq - needed?\par
+rubble does nothing - needed?\par
+\par
+\b gold wings overlay not showing for flagship or upgraded spacedock\par
+\par
+recolour scrambler missile\b0\par
+\par
+planet can move in tutorial\par
+increase planet hp\par
+planetary weapons?\par
+anti-missile upgrade?\par
+fix attack thruster\par
+fix assault\par
+fix advanced nanomine\par
+\par
+ability idea - damage limiter (like EE terror)\par
+same thing for cth?\par
+\par
+\par
+\b\fs24 Ideas\b0\fs20\par
+\par
+something which alters base income\par
+\ul\par
+\cf0\f1\fs22 unsure which transporter we beam to\par
+red text for purchases when insufficient funds\par
+more ship details on launch screen\par
+remove label and terrain for destroyed planets\par
+advance message contain more info\par
+remove facing for HQs and planets\par
+tech tree to include costs\par
+scrolls to side leader on turn start\par
+remove units from recall list if transporter dies\par
+\cf1\ulnone\f0\fs20\par
+\cf0\f1\fs22\par
+\b doesn't scroll to planet surface through fog\b0\par
+\b remove stuff about being slowed on tutorial\b0\par
+\b remove or change marine's assault ability\b0\par
+\b defend anims for terran ground units\b0\par
+\b river ford - ford\b0\par
+\b beam up HQ\b0\par
+\b sound for beaming up and artifacts\b0\par
+\b I beamed down to Ozim's HQ spot\b0\par
+\b report number of scientists on research options\b0\par
+\b remove friendly after unit changes side\par
+remove planetbound\b0\par
+\b add scroll options even for planet's without HQ\b0\par
+\b petrifies wears off\b0\par
+\b artifact float should happen before level advance\b0\par
+\b brain eaters have no attack noise\b0\par
+\b inventor mind warp anim\b0\par
+\b droid fist anim way too fast\b0\par
+\b population increase should happen after food processor\par
+does autorepair work?\par
+hospitals should heal robots\b0\par
+\b sibyl's psychic torture anim should be ranged\par
+add population control unit to food weapon\par
+no ray gun icon for vendeeni\b0\par
+\b ildari troopers and exterminators should have green bolts\b0\par
+\b defence laser should be defend only\par
+iildari fighter has double laser projectiles\par
+\cf1\b0\f0\fs20\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+# for testing\par
+\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Sniper" 24 19 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Worker" 24 22 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Rocketman" 24 23 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Marine" 24 24 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Specialist" 23 19 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Scientist" 25 19 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Soldier" 26 19 Homeworld1\}\par
+\tab\tab\{GE_PLACE_UNIT 1 "Terran Engineer" 27 19 Homeworld1\}\par
+\tab\tab\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Drone" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Labourer" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Diviner" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Sibyl" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Sentry" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Sentinel" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Sliverer" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Fighter" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Warrior" 24 19 Homeworld2\}\par
+\tab\tab\{GE_PLACE_UNIT 2 "Vendeeni Gunner" 24 19 Homeworld2\}\par
+\tab\tab\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Labourer" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Operative" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Researcher" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Inquisitor" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Veteran" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Footsoldier" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Stormtrooper" 24 19 Homeworld3\}\par
+\tab\tab\{GE_PLACE_UNIT 3 "Dwartha Shocktrooper" 24 19 Homeworld3\}\par
+\tab\tab\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Droid" 22 24 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Mechanic" 24 19 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Inventor" 24 19 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Armoured Inventor" 24 19 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Trooper" 24 19 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Gladiator" 24 19 Homeworld4\}\par
+\tab\tab\{GE_PLACE_UNIT 4 "Iildari Exterminator" 24 19 Homeworld4\}\par
+\par
+\par
+\par
+\tab\tab\{GE_CREATE_SHIP 2 "Iildari Explorer" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 2 "Iildari Explorer" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 2 "Iildari Fighter" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 2 "Iildari Battery" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 4 "Vendeeni War Wasp" 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_SHIP 1 "Terran Patrol" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 1 "Terran Servicer" 15 24\}\par
+\tab\tab\{GE_CREATE_SHIP 1 "Terran Guardian" 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_MISSILE 2 "Plague Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 2 "Plague Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 2 "Plague Bomb" 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_MISSILE 2 "Smart Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 2 "Plague Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 "Plague Bomb" 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Scrambler" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Scrambler" 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Smart Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Planetbuster" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Smart Bomb" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 4 "Planetbuster" 15 24\}\par
+\tab\tab\{GE_CREATE_MISSILE 1 Shark 15 24\}\par
+\tab\tab\par
+\tab\tab\{GE_CREATE_SHIP 4 "Vendeeni Clinger" 14 25\}\par
+\par
+\par
+\par
+\par
+\par
+\par
+# Unpetrify when explorer moves away\par
+\par
+[event]\par
+\tab name=moveto\par
+\tab first_time_only=no\par
+\tab [filter]\par
+\tab\tab has_weapon="stasis generator"\par
+\tab [/filter]\par
+\tab\par
+\tab [if]\par
+\tab\tab [have_unit]\par
+\tab\tab\tab role=ship\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab side=$side_number\par
+\tab\tab\tab [/not]\par
+\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab [/not]\par
+\tab\tab [/have_unit]\par
+\tab\tab [then]\par
+\par
+\tab\tab\tab [unpetrify]\par
+\tab\tab\tab\tab #[filter]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab side=$side_number\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab\tab role=ship\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab #[/filter]\par
+\tab\tab\tab [/unpetrify]\par
+\tab\tab\tab\par
+\tab\tab [/then]\par
+\tab [/if]\par
+\tab\tab\par
+[/event]\par
+\par
+# Unpetrify when explorer dies\par
+[event]\par
+\tab name=die\par
+\tab first_time_only=no\par
+\tab [filter]\par
+\tab\tab has_weapon="stasis generator"\par
+\tab [/filter]\par
+\tab\par
+\tab [if]\par
+\tab\tab [have_unit]\par
+\tab\tab\tab role=ship\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab side=$unit.side\par
+\tab\tab\tab [/not]\par
+\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab [/not]\par
+\tab\tab [/have_unit]\par
+\tab\tab [then]\par
+\par
+\tab\tab\tab [unpetrify]\par
+\tab\tab\tab\tab #[filter]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab side=$unit.side\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab\tab role=ship\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab #[/filter]\par
+\tab\tab\tab [/unpetrify]\par
+\tab\tab\tab\par
+\tab\tab [/then]\par
+\tab [/if]\par
+\tab\tab\par
+[/event]\par
+\par
+# Unpetrify if explorer is itself petrified\par
+[event]\par
+\tab name=petrified\par
+\tab first_time_only=no\par
+\tab [filter]\par
+\tab\tab has_weapon="stasis generator"\par
+\tab [/filter]\par
+\tab\par
+\tab [if]\par
+\tab\tab [have_unit]\par
+\tab\tab\tab role=ship\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab side=$unit.side\par
+\tab\tab\tab [/not]\par
+\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab [not]\par
+\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab [/not]\par
+\tab\tab [/have_unit]\par
+\tab\tab [then]\par
+\par
+\tab\tab\tab [unpetrify]\par
+\tab\tab\tab\tab #[filter]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab side=$unit.side\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab\tab role=ship\par
+\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab petrified=yes\par
+\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab [not]\par
+\tab\tab\tab\tab\tab\tab [filter_adjacent]\par
+\tab\tab\tab\tab\tab\tab\tab has_weapon="stasis generator"\par
+\tab\tab\tab\tab\tab\tab\tab is_enemy=yes\par
+\tab\tab\tab\tab\tab\tab\tab [filter_wml]\par
+\tab\tab\tab\tab\tab\tab\tab\tab [status]\par
+\tab\tab\tab\tab\tab\tab\tab\tab\tab petrified=no\par
+\tab\tab\tab\tab\tab\tab\tab\tab [/status]\par
+\tab\tab\tab\tab\tab\tab\tab [/filter_wml]\par
+\tab\tab\tab\tab\tab\tab [/filter_adjacent]\par
+\tab\tab\tab\tab\tab [/not]\par
+\tab\tab\tab\tab #[/filter]\par
+\tab\tab\tab [/unpetrify]\par
+\tab\tab\tab\par
+\tab\tab [/then]\par
+\tab [/if]\par
+\tab\tab\par
+[/event]\par
+\par
+}
+ 
